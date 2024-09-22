@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/accordion";
 import Header from "@/components/barbershops/Header";
 import React from "react";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -26,14 +27,15 @@ const page = () => {
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Gestiona citas, clientes y servicios en una sola plataforma.
-                Diseñado específicamente para barberías modernas.
+                Diseñado espec&iacute;ficamente para barber&iacute;as modernas.
               </p>
+
               <Button size="lg" className="text-lg px-8">
                 Prueba gratis por 30 días
               </Button>
             </div>
             <div className="mt-16 relative">
-              <img
+              <Image
                 src="/placeholder.svg?height=600&width=1200"
                 alt="Dashboard de la plataforma"
                 className="rounded-lg shadow-2xl mx-auto"
@@ -149,7 +151,7 @@ const page = () => {
                     </Button>
                   </div>
                   <div className="md:w-1/2">
-                    <img
+                    <Image
                       src={step.image}
                       alt={step.title}
                       className="rounded-lg shadow-md"

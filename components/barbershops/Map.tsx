@@ -28,11 +28,69 @@ interface MapProps {
 }
 
 const lightMapStyles = [
-  // ... (keep the existing styles)
+  {
+    featureType: "all",
+    elementType: "geometry",
+    stylers: [{ color: "#f5f5f5" }],
+  },
+  {
+    featureType: "all",
+    elementType: "labels.text.fill",
+    stylers: [{ color: "#616161" }],
+  },
+  {
+    featureType: "all",
+    elementType: "labels.text.stroke",
+    stylers: [{ color: "#f5f5f5" }],
+  },
+  {
+    featureType: "road",
+    elementType: "geometry",
+    stylers: [{ color: "#ffffff" }],
+  },
+  {
+    featureType: "water",
+    elementType: "geometry",
+    stylers: [{ color: "#e9e9e9" }],
+  },
+  {
+    featureType: "water",
+    elementType: "labels.text.fill",
+    stylers: [{ color: "#9e9e9e" }],
+  },
 ];
 
 const darkMapStyles = [
-  // ... (keep the existing styles)
+  {
+    featureType: "all",
+    elementType: "geometry",
+    stylers: [{ color: "#1f2937" }],
+  },
+  {
+    featureType: "all",
+    elementType: "labels.text.fill",
+    stylers: [{ color: "#f3f4f6" }],
+  },
+  {
+    featureType: "all",
+    elementType: "labels.text.stroke",
+    stylers: [{ color: "#374151" }],
+  },
+  {
+    featureType: "road",
+    elementType: "geometry",
+    stylers: [{ color: "#4b5563" }],
+  },
+  {
+    featureType: "water",
+    elementType: "geometry",
+    stylers: [{ color: "#1e3a8a" }],
+  },
+  {
+    featureType: "water",
+    elementType: "labels.text.fill",
+    stylers: [{ color: "#93c5fd" }],
+  },
 ];
 
 export default function Map({ shops, hoveredShopId }: MapProps) {

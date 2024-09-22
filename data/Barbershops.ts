@@ -8,6 +8,7 @@ export interface Barbershop {
   lat: number;
   lng: number;
   imageUrl: string;
+  images?: string[]; // Add this optional property
 }
 
 export const barbershops: Barbershop[] = [

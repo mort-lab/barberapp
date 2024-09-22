@@ -65,7 +65,7 @@ export default function LandingPage() {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     router.push(
-      `/?location=${encodeURIComponent(
+      `/search?location=${encodeURIComponent(
         location
       )}&date=${date?.toISOString()}&people=${encodeURIComponent(people)}`
     );
@@ -76,7 +76,6 @@ export default function LandingPage() {
       <Header />
 
       <main className="container mx-auto px-4 py-8">
-        {/* Hero Section */}
         <section className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">
             Find Your Perfect Barbershop
@@ -85,7 +84,6 @@ export default function LandingPage() {
             Discover top-rated barbers in your area
           </p>
 
-          {/* Search Bar */}
           <form
             onSubmit={handleSearch}
             className="flex items-center justify-center space-x-4 bg-background shadow-lg rounded-full p-2 max-w-4xl mx-auto"
@@ -98,6 +96,7 @@ export default function LandingPage() {
                 className="border-0 focus-visible:ring-0"
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
+                aria-label="Location"
               />
             </div>
             <Popover>
@@ -105,6 +104,7 @@ export default function LandingPage() {
                 <Button
                   variant="outline"
                   className="w-[280px] justify-start text-left font-normal"
+                  aria-label="Select date"
                 >
                   <CalendarIcon className="mr-2 h-4 w-4" />
                   <span>{date ? date.toDateString() : "Pick a date"}</span>
@@ -114,7 +114,7 @@ export default function LandingPage() {
                 <Calendar
                   mode="single"
                   selected={date}
-                  onSelect={setDate}
+                  onSelect={(newDate) => setDate(newDate)}
                   initialFocus
                 />
               </PopoverContent>
@@ -125,6 +125,7 @@ export default function LandingPage() {
                 className="bg-transparent border-0 focus:ring-0"
                 value={people}
                 onChange={(e) => setPeople(e.target.value)}
+                aria-label="Number of people"
               >
                 <option>1 person</option>
                 <option>2 people</option>
@@ -132,13 +133,12 @@ export default function LandingPage() {
                 <option>4+ people</option>
               </select>
             </div>
-            <Button type="submit" size="icon">
+            <Button type="submit" size="icon" aria-label="Search">
               <Search className="h-4 w-4" />
             </Button>
           </form>
         </section>
 
-        {/* Categories */}
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Browse by category</h2>
           <div className="flex space-x-4 overflow-x-auto pb-4">
@@ -147,7 +147,7 @@ export default function LandingPage() {
                 <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-2">
                   <Image
                     src={category.icon}
-                    alt={category.name}
+                    alt={`${category.name} icon`}
                     width={32}
                     height={32}
                   />
@@ -158,7 +158,6 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* Featured Barbers */}
         <section>
           <h2 className="text-2xl font-semibold mb-4">Featured Barbers</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -169,7 +168,7 @@ export default function LandingPage() {
               >
                 <Image
                   src={barber.image}
-                  alt={barber.name}
+                  alt={`${barber.name} barbershop`}
                   width={400}
                   height={300}
                   className="w-full h-48 object-cover"

@@ -16,10 +16,8 @@ import {
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { name: "Home", href: "/" },
-  { name: "Search", href: "/search" },
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "Home", href: "/users" },
+  { name: "Search", href: "/" },
 ];
 
 export default function Header() {

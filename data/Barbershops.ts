@@ -7,6 +7,7 @@ export interface Barbershop {
   price: number;
   lat: number;
   lng: number;
+  imageUrl: string;
 }
 
 export const barbershops: Barbershop[] = [
@@ -18,6 +19,8 @@ export const barbershops: Barbershop[] = [
     price: 25,
     lat: 43.3183,
     lng: -1.9812,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 2,
@@ -27,6 +30,8 @@ export const barbershops: Barbershop[] = [
     price: 30,
     lat: 43.3167,
     lng: -1.9864,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 3,
@@ -36,6 +41,8 @@ export const barbershops: Barbershop[] = [
     price: 28,
     lat: 43.3147,
     lng: -1.983,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 4,
@@ -45,6 +52,8 @@ export const barbershops: Barbershop[] = [
     price: 22,
     lat: 43.3189,
     lng: -1.98,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 5,
@@ -54,6 +63,8 @@ export const barbershops: Barbershop[] = [
     price: 27,
     lat: 43.3224,
     lng: -1.9852,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 6,
@@ -63,6 +74,8 @@ export const barbershops: Barbershop[] = [
     price: 26,
     lat: 43.3203,
     lng: -1.9836,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 7,
@@ -72,6 +85,8 @@ export const barbershops: Barbershop[] = [
     price: 24,
     lat: 43.3178,
     lng: -1.9821,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 8,
@@ -81,6 +96,8 @@ export const barbershops: Barbershop[] = [
     price: 29,
     lat: 43.3149,
     lng: -1.9887,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 9,
@@ -90,6 +107,8 @@ export const barbershops: Barbershop[] = [
     price: 31,
     lat: 43.3211,
     lng: -1.9843,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 10,
@@ -99,6 +118,8 @@ export const barbershops: Barbershop[] = [
     price: 28,
     lat: 43.3156,
     lng: -1.9805,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 11,
@@ -108,6 +129,8 @@ export const barbershops: Barbershop[] = [
     price: 33,
     lat: 43.3172,
     lng: -1.9876,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 12,
@@ -117,6 +140,8 @@ export const barbershops: Barbershop[] = [
     price: 26,
     lat: 43.3235,
     lng: -1.9856,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 13,
@@ -126,6 +151,8 @@ export const barbershops: Barbershop[] = [
     price: 27,
     lat: 43.3261,
     lng: -1.9764,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 14,
@@ -135,6 +162,8 @@ export const barbershops: Barbershop[] = [
     price: 30,
     lat: 43.325,
     lng: -1.979,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 15,
@@ -144,6 +173,8 @@ export const barbershops: Barbershop[] = [
     price: 29,
     lat: 43.3241,
     lng: -1.986,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 16,
@@ -153,6 +184,8 @@ export const barbershops: Barbershop[] = [
     price: 25,
     lat: 43.3252,
     lng: -1.989,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 17,
@@ -162,6 +195,8 @@ export const barbershops: Barbershop[] = [
     price: 28,
     lat: 43.3267,
     lng: -1.9783,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 18,
@@ -171,6 +206,8 @@ export const barbershops: Barbershop[] = [
     price: 32,
     lat: 43.311,
     lng: -2.0054,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 19,
@@ -180,6 +217,8 @@ export const barbershops: Barbershop[] = [
     price: 31,
     lat: 43.3134,
     lng: -2.0017,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 20,
@@ -189,6 +228,8 @@ export const barbershops: Barbershop[] = [
     price: 26,
     lat: 43.3145,
     lng: -2.0067,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 21,
@@ -198,6 +239,8 @@ export const barbershops: Barbershop[] = [
     price: 27,
     lat: 43.3108,
     lng: -1.9778,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 22,
@@ -207,6 +250,8 @@ export const barbershops: Barbershop[] = [
     price: 29,
     lat: 43.3042,
     lng: -1.9734,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 23,
@@ -216,6 +261,8 @@ export const barbershops: Barbershop[] = [
     price: 30,
     lat: 43.3075,
     lng: -1.9904,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 24,
@@ -225,6 +272,8 @@ export const barbershops: Barbershop[] = [
     price: 33,
     lat: 43.3156,
     lng: -1.9935,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
   {
     id: 25,
@@ -234,5 +283,7 @@ export const barbershops: Barbershop[] = [
     price: 25,
     lat: 43.3189,
     lng: -1.9697,
+    imageUrl:
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1024707978745273009/original/7d2462c3-8e66-4311-b82e-4414d91d1b2f.jpeg?im_w=720",
   },
 ];

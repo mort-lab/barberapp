@@ -10,7 +10,7 @@ import {
   SelectContent,
   SelectItem,
 } from "@/components/ui/select";
-import { Check, Instagram, Star, AppleIcon } from "lucide-react";
+import { Check, Star, AppleIcon } from "lucide-react";
 import { Avatar, AvatarImage } from "../ui/avatar";
 import { useAuth, SignUp } from "@clerk/nextjs";
 import {

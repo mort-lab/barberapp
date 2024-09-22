@@ -108,7 +108,14 @@ export default function BookingForm({ shop }: BookingFormProps) {
   ];
 
   const isTimeSlotAvailable = (barberId: number, time: string) => {
-    return Math.random() > 0.3;
+    const barberAvailability: Record<number, string[]> = {
+      1: ["9:00", "10:00", "11:00", "14:00", "15:00"],
+      2: ["9:30", "10:30", "11:30", "14:30", "15:30"],
+      3: ["10:00", "11:00", "12:00", "15:00", "16:00"],
+      4: ["10:30", "11:30", "12:30", "15:30", "16:30"],
+    };
+
+    return barberAvailability[barberId]?.includes(time) ?? false;
   };
 
   const handleConfirmBooking = () => {
@@ -133,9 +140,7 @@ export default function BookingForm({ shop }: BookingFormProps) {
   };
 
   const handleApplePay = () => {
-    // Implement Apple Pay logic here
     console.log("Apple Pay initiated");
-    // For now, we'll just confirm the booking
     handleConfirmBooking();
   };
 

@@ -13,7 +13,7 @@ import Header from "@/components/barbershops/Header";
 import React from "react";
 import Image from "next/image";
 
-const page = () => {
+const Page = () => {
   return (
     <div>
       <Header />
@@ -27,7 +27,7 @@ const page = () => {
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Gestiona citas, clientes y servicios en una sola plataforma.
-                Diseñado espec&iacute;ficamente para barber&iacute;as modernas.
+                Diseñado específicamente para barberías modernas.
               </p>
 
               <Button size="lg" className="text-lg px-8">
@@ -39,8 +39,9 @@ const page = () => {
                 src="/placeholder.svg?height=600&width=1200"
                 alt="Dashboard de la plataforma"
                 className="rounded-lg shadow-2xl mx-auto"
+                width={1200}
+                height={600}
               />
-              {/* Animated elements could be added here */}
             </div>
           </div>
         </section>
@@ -52,7 +53,6 @@ const page = () => {
               Confían en nosotros las mejores barberías de España
             </p>
             <div className="flex justify-center items-center space-x-12 flex-wrap">
-              {/* Replace with actual logos */}
               {[1, 2, 3, 4, 5].map((i) => (
                 <div
                   key={i}
@@ -155,6 +155,8 @@ const page = () => {
                       src={step.image}
                       alt={step.title}
                       className="rounded-lg shadow-md"
+                      width={600}
+                      height={400}
                     />
                   </div>
                 </div>
@@ -193,7 +195,7 @@ const page = () => {
                 <Card key={index} className="bg-muted">
                   <CardContent className="pt-6">
                     <p className="text-muted-foreground italic mb-4">
-                      "{testimonial.quote}"
+                      &quot;{testimonial.quote}&quot;
                     </p>
                     <div className="font-semibold">{testimonial.author}</div>
                     <div className="text-sm text-muted-foreground">
@@ -341,4 +343,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

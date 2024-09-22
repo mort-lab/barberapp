@@ -192,7 +192,7 @@ export default function BookingForm({ shop }: BookingFormProps) {
                       onClick={() => setSelectedBarber(barber.id)}
                     >
                       <Avatar className="w-24 h-24 rounded-full mb-2 mx-auto overflow-hidden">
-                        <AvatarImage src={barber.avatar} />
+                        <AvatarImage src={barber.avatar} alt={barber.name} />
                       </Avatar>
                       <span className="text-lg font-medium block">
                         {barber.name}
